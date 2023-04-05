@@ -46,8 +46,8 @@ nav ul a:hover::after {
 
 .logo:hover {
   color: #ffffff;
-  font-size: 38px;
-  transition: all 0.4s ease-out;
+  zoom: 125%;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav_link {

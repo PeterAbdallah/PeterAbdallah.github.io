@@ -56,8 +56,8 @@ nav {
 
 .logo:hover{
     color: $hov-color;
-    font-size: 38px;
-    transition: all 0.4s ease-out;
+    zoom: 125%;
+    transition: all 0.4s ease-in-out;
 }
 
 .nav_link {
