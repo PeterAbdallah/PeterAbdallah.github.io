@@ -1,0 +1,98 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  background: url("/images/tunnel-gif.gif") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(241, 241, 241);
+}
+
+.card-container {
+  display: flex;
+  gap: 32px;
+  margin: 30px 60px;
+}
+.card-container .card {
+  padding: 14px;
+  color: rgb(241, 241, 241);
+  border: 2px groove rgb(255, 215, 0);
+  border-radius: 40px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(130deg, rgba(10, 10, 10, 0.6) 5%, rgba(50, 50, 50, 0.6) 20%, rgba(100, 100, 100, 0.6) 35%, rgba(110, 110, 110, 0.6) 50%, rgba(100, 100, 100, 0.6) 65%, rgba(50, 50, 50, 0.6) 80%, rgba(10, 10, 10, 0.6) 95%);
+  font-family: sans-serif;
+  transition: all 0.55s ease-in-out;
+}
+.card-container .card h3 {
+  padding-inline-start: 5px;
+  border-bottom: 1.5px solid rgb(241, 241, 241);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+  color: rgb(255, 215, 0);
+}
+.card-container .card ol {
+  padding-inline-start: 25px;
+}
+.card-container .card ol > li {
+  margin: 10px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 19px;
+  color: rgb(255, 215, 0);
+}
+.card-container .card ul > li {
+  font-size: 16px;
+  padding: 5px;
+  list-style-type: disc;
+}
+.card-container .card1:hover, .card-container .card2:hover, .card-container .card3:hover {
+  transform: scale(1.07);
+  background: linear-gradient(130deg, rgb(10, 10, 10) 5%, rgb(50, 50, 50) 20%, rgb(100, 100, 100) 35%, rgb(110, 110, 110) 50%, rgb(100, 100, 100) 65%, rgb(50, 50, 50) 80%, rgb(10, 10, 10) 95%);
+}
+
+.container2 .recommended {
+  text-align: center;
+  font-size: 21px;
+  border-bottom: 2px solid white;
+  padding: 10px;
+}
+.container2 .recommended a {
+  font-weight: 900;
+  font-size: 22px;
+  color: rgb(255, 215, 0);
+}
+.container2 .title {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(241, 241, 241);
+}
+
+.events .event {
+  display: flex;
+  gap: 20px;
+  box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.75);
+  margin: 80px 40px;
+  padding: 10px 18px 15px 18px;
+  background: linear-gradient(130deg, rgba(10, 10, 10, 0.6) 5%, rgba(50, 50, 50, 0.6) 20%, rgba(100, 100, 100, 0.6) 35%, rgba(110, 110, 110, 0.6) 50%, rgba(100, 100, 100, 0.6) 65%, rgba(50, 50, 50, 0.6) 80%, rgba(10, 10, 10, 0.6) 95%);
+  border: 3px solid black;
+  border-radius: 50px;
+  color: black;
+}
+.events .start, .events .end {
+  text-align: center;
+}
+.events .scroll-container {
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 15px;
+  background-color: rgba(51, 51, 51, 0.65);
+  border-radius: 10px;
+}
+.events .scroll-container img {
+  padding: 10px;
+  width: 350px;
+  height: 300px;
+}

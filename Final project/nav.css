@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo {
+  width: 90px;
+  height: 63px;
+  background: url(images/chemistry-fire.gif);
+  background-size: 80px 80px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(219, 235, 240);
+  font-weight: 700;
+  padding: 7px;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(10,10,10) 5%, rgb(50,50,50) 20%, rgb(100,100,100) 35%, rgba(110,110,110) 50%, rgba(100,100,100) 65%, rgba(50,50,50) 80%, rgba(10,10,10) 95%);
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  font-size: 19px;
+  text-transform: uppercase;
+  justify-content: space-between;
+  transition: 0.5s all ease-in-out;
+}
+
+a.active, a:hover {
+  border: 3px groove hover-col rgb(176, 71, 11);
+  border-radius: 90px;
+  box-shadow: 0px 0px 40px rgb(176, 71, 11);
+  transform: scale(1.1); 
+}
+
+.user{
+  transform: scale(1.7);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/get in touch/contact.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="icon" href="/images/Hell-removebg.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f5aca8d8dc.js" crossorigin="anonymous"></script>
+    <title>Hell Riders</title>
+</head>
+<body>
+        <!-- navigation bar -->
+        <nav class="nav">
+            <img src="/images/Hell-removebg.png" alt="logo" id="logo">
+            <a href="/home/home.html"><span><i class="fa fa-fw fa-home"></i>Home</span> </a>
+            <a href="/membership/membership.html"><span><i class="fa fa-fw fa-info-circle"></i> About us</span></a>
+            <a href="/rides/rides.html"><span><i class="fa fa-fw fa-motorcycle"></i> Rides</span></a>
+            <a href="/get in touch/contact.html"><span  class="active"><i class="fa fa-fw fa-envelope"></i> Get In Touch</span></a>
+            <a href="/shop/shop.html"><span><i class="fa fa-fw fa-shopping-cart"></i> Shop</span></a>
+            
+            <div class="login">
+              <a href="/login/login.html"><i class="fa-solid fa-plus"></i></a>
+              <a href="/login/login.html"><i class="fa-solid fa-circle-user user"></i></a>
+            </div>
+        </nav>
+
+        <div class="bg-image"></div>
+
+        <main>
+            <section class="contact-us">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <p>Have a question or comment? Reach out to us below.</p>
+        
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" width="20" required>
+
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age" min="21" max="99" required>
+        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="XX - XXXXXX" pattern="[0-9]{2}-[0-9]{6}" required>
+        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="choose your words wisely" required></textarea>
+        
+                        <input type="submit" value="Submit">
+                    </form>
+                </fieldset>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <i class="fa-solid fa-location-dot loc" style="color: white;"></i>
+                <p>FAP building(2nd, 4th and 5th Floor) <br> Jounieh Hightway, Lebanon</p>
+            </div>
+
+            <div>
+                <a href=""><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+                <p>Hell_Riders</p>
+            </div>
+
+            <div>
+                <a href=""><i class="fa-brands fa-tiktok" style="color: white;"></i></a>
+                <p>Hell_Riders</p>
+            </div>
+
+            <div>
+                <a href=""><i class="fa-brands fa-youtube" style="color: white;"></i></a>
+                <p>Hell Riders Official</p>
+            </div>
+
+            <div>
+                <a href="https://wa.me/+96171025299"><i class="fa-brands fa-whatsapp" style="color: white;"></i></a>
+                <p>+961 - 71 025 200</p>
+            </div>
+        </footer>
+</body>
+</html>

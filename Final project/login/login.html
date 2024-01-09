@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/login.css">
+    <link rel="icon" href="/images/Hell-removebg.png">
+
+    <script src="https://kit.fontawesome.com/f5aca8d8dc.js" crossorigin="anonymous"></script>
+
+    <title>Join us now!</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 id="title">Sign up</h2>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Name" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                </div>
+
+                <p>Forgot password? <a href="">change it here!</a></p>
+
+                <div class="buttons-field">
+                    <button type="button" id="logInBut" class="disabled">Log in</button>
+                    <button type="button" id="signUpBut">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let logInBut = document.getElementById("logInBut");
+        let signUpBut = document.getElementById("signUpBut");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        logInBut.onclick = function(){
+            nameField.style.display = "none";
+            logInBut.classList.remove("disabled");
+            signUpBut.classList.add("disabled");
+            title.innerHTML = "Log in";
+        }
+
+        signUpBut.onclick = function(){
+            nameField.style.display = "block";
+            signUpBut.classList.remove("disabled");
+            logInBut.classList.add("disabled");
+            title.innerHTML = "Sign up";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Slide-show*/
+.background {
+  background-image: url(/images/bg4.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+
+}
+
+#slideshow {
+  padding-top: 40px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  min-width: 900px;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 30s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.slide {
+  float: left;
+  height: 368px;
+  width: 780px;
+}
+
+@-webkit-keyframes slide {
+  20% {
+    margin-left: 80px;
+  }
+
+  30% {
+    margin-left: 110px;
+  }
+
+  50% {
+    margin-left: -250px;
+  }
+
+  60% {
+    margin-left: -630px;
+  }
+
+  70% {
+    margin-left: -758px;
+  }
+
+  80% {
+    margin-left: -900px;
+  }
+
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items {
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.items img {
+  width: 120px;
+  margin-top: 60px;
+  margin-left: 120px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 90px;
+  background-image: url("/images/itemBg2-1.jpg");
+  box-shadow: -5px -5px 50px;
+
+}
+
+.items #bag {
+  width: 80px;
+  margin-top: 60px;
+  margin-left: 120px;
+  padding: 20px 40px 20px 40px;
+  border-radius: 90px;
+  background-image: url("/images/itemBg2-1.jpg");
+
+}
+
+.caption {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline;
+  margin-left: 150px;
+
+}
+
+/*Opening-page*/
+
+.home {
+  background-color: #111;
+  position: relative;
+
+}
+
+.home .container .content {
+  margin-left: 150px;
+}
+
+.home .container .content h1 {
+  font-size: 60px;
+  color: white;
+}
+
+.home .container .content i {
+  color: rgb(145, 16, 16);
+}
+
+.home .container .content p {
+  text-indent: 50px;
+  font-size: 20px;
+  color: white;
+  line-height: 1.8;
+}
+
+.home .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.home .container .image img {
+  width: 500px;
+  height: 750px;
+}
